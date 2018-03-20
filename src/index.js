@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import cx from 'classnames';
 import './style.scss';
 
@@ -16,8 +17,8 @@ const docked = (...WrappedComponents: [ReactClass<*>]) => {
     state: S;
     dockedNode: HTMLElement;
     handleScroll: () => void;
-    defaultProps: {
-      top: 0, // default docked header would be sticky to top from the very beginning
+    static defaultProps = {
+      top: 0
     };
 
     constructor(props: P) {
