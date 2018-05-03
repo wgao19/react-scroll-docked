@@ -15,6 +15,6 @@ export default {
   plugins: [
     sass({insert: true}),
     resolve(),
-    babel({exclude: 'node_modules/**'})
+    babel({exclude: 'node_modules/**', plugins:['external-helpers']})
   ]
 };
