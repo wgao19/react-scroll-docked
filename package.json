@@ -1,7 +1,7 @@
 {
   "name": "react-scroll-docked",
   "version": "0.1.1",
-  "main": "src/index.js",
+  "main": "dist/bundle.js",
   "repository": "git@github.com:wgao19/react-scroll-docked.git",
   "author": "Wei Gao <wgao19@gmail.com>",
   "email": "wgao19@gmail.com",

@@ -1,5 +1,4 @@
 import sass from 'rollup-plugin-sass';
-import flow from 'rollup-plugin-flow';
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 
@@ -11,11 +10,10 @@ export default {
   },
   external: [
     'react',
-    'prop-types',
     'classnames'
   ],
   plugins: [
-    sass(),
+    sass({insert: true}),
     resolve(),
     babel({exclude: 'node_modules/**'})
   ]
